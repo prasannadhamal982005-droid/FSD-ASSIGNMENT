@@ -1,0 +1,98 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STYLEHIVE</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #2E4600;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .product-container {
+            max-width: 500px;
+            margin: auto;
+            background: #fff8f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-container img {
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #8B4513;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #5D473A;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        select, input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 200px;
+        }
+        button {
+            background-color: #8B4513;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #A0522D;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <h1>Oversized T-Shirt</h1>
+        <img src="Screenshot 2025-08-09 at 12.55.43 PM.png" alt="Navy Blue Men's Oversized Shirt" width="300" height="400">
+        <p>Relaxed, breathable, and effortlessly stylish. Made from 100% cotton, this classic blue shirt pairs perfectly with any outfit for a laid-back, trendy look.</p>
+        <div class="price">$0.66</div>
+
+        <form>
+            <label for="sizes">Sizes Available:</label>
+            <select id="sizes" name="Sizes">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+                <option value="XXXL">XXXL</option>
+            </select>
+
+            <label for="qty">Quantity:</label>
+            <input type="text" id="qty" name="qty" placeholder="Enter quantity" required>
+
+            <br>
+            <button type="submit">Add To Cart</button>
+        </form>
+    </div>
+
+</body>
+</html>
